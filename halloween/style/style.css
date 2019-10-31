@@ -1,0 +1,61 @@
+
+        body {background-color:black}
+        #wrapper {position:relative;
+            background-image: url("imagenes/halloween2.jpg");
+            background-repeat:no-repeat;
+            width: 1500px;
+            height: 740px;
+            margin: auto}
+    h1 {position:absolute;
+    top:20px;
+    left:20px;
+    font-family: 'Butcherman', cursive;
+    font-size: 2.5em;
+    color:orange;
+    text-shadow:black 2px 2px,
+    black -2px -2px,
+    black -2px 2px,
+    black 2px -2px;}
+    #p1 {position:relative;
+    top:40px;
+    left: 700px;
+    font-size: 2.5em;
+    font-family: 'Butcherman', cursive;}
+    #p2 {position:relative;
+    top:300px;
+    left:25px;
+    font-size: 1.5em;
+    font-family: 'Butcherman', cursive;
+    color:brown;
+    text-shadow:black 2px 2px,
+    black -2px -2px,
+    black -2px 2px,
+    black 2px -2px;}
+    #p3 {position:relative;
+    top:60px;
+    left:1100px;
+    font-size: 1.5em;
+    font-family: 'Butcherman', cursive;
+    color:teal;
+    text-shadow:black 2px 2px,
+    black -2px -2px,
+    black -2px 2px,
+    black 2px -2px;}
+    #ventana {position: absolute;
+    top:350px;
+    left:500px;
+    width:150px;
+    height:200px;}
+    #ventana2 {position: absolute;
+    top:150px;
+    left:900px;
+    width:100px;
+    height:200px;}
+    #zombie {position:absolute;
+    top:250px;
+    left:350px;
+    visibility:hidden;}
+    #zombie2 {position:absolute;
+    top:225px;
+    left:910px;
+    visibility:hidden;}

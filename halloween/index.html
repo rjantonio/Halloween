@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scary Halloween Party</title>
+    <link href="https://fonts.googleapis.com/css?family=Butcherman&display=swap" rel="stylesheet">
+    <link href="favicon.ico" rel="icon">
+
+    <style>
+        body {background-color:black}
+        #wrapper {position:relative;
+            background-image: url("imagenes/halloween2.jpg");
+            background-repeat:no-repeat;
+            width: 1500px;
+            height: 740px;
+            margin: auto}
+    h1 {position:absolute;
+    top:20px;
+    left:20px;
+    font-family: 'Butcherman', cursive;
+    font-size: 2.5em;
+    color:orange;
+    text-shadow:black 2px 2px,
+    black -2px -2px,
+    black -2px 2px,
+    black 2px -2px;}
+    #p1 {position:relative;
+    top:40px;
+    left: 700px;
+    font-size: 2.5em;
+    font-family: 'Butcherman', cursive;}
+    #p2 {position:relative;
+    top:300px;
+    left:25px;
+    font-size: 1.5em;
+    font-family: 'Butcherman', cursive;
+    color:brown;
+    text-shadow:black 2px 2px,
+    black -2px -2px,
+    black -2px 2px,
+    black 2px -2px;}
+    #p3 {position:relative;
+    top:60px;
+    left:1100px;
+    font-size: 1.5em;
+    font-family: 'Butcherman', cursive;
+    color:teal;
+    text-shadow:black 2px 2px,
+    black -2px -2px,
+    black -2px 2px,
+    black 2px -2px;}
+    #ventana {position: absolute;
+    top:350px;
+    left:500px;
+    width:150px;
+    height:200px;}
+    #ventana2 {position: absolute;
+    top:150px;
+    left:900px;
+    width:100px;
+    height:200px;}
+    #zombie {position:absolute;
+    top:250px;
+    left:350px;
+    visibility:hidden;}
+    #zombie2 {position:absolute;
+    top:225px;
+    left:910px;
+    visibility:hidden;}
+    </style>
+    <script>
+        function mostrar(elemento) {
+            document.getElementById(elemento).style.visibility="visible";
+        }
+        function ocultar(elemento) {
+            document.getElementById(elemento).style.visibility="hidden";
+        }
+        function sonar(sonido){
+            document.getElementById(sonido).play();
+        }
+        function sonar(sonido){
+            document.getElementById(sonido).pause();
+        }
+        </script>
+</head>
+<body onload="sonar('sonido1')">
+
+    <audio id="sonido1">
+        <source src="./sonidos/sonido1.mp3" type="audio/mp3">
+    </audio>
+
+        <audio id="sonido2">
+            <source src="./sonidos/sonido2.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="sonido3">
+                <source src="./sonidos/sonido3.mp3" type="audio/mp3">
+            </audio>
+
+    <div id="wrapper">
+        <h1>Scary Halloween Party</h1>
+        <p id="p1">Are you ready to meet evil?</p>
+        <p id="p2">Don't you dare clicking on the tomb!!</p>
+        <p id="p3">Does this tree have a face?!</p>
+        <div id="ventana" onclick="mostrar('zombie');sonar('sonido2')"></div>
+        <div id="ventana2" onclick="mostrar('zombie2');sonar('sonido3')"></div>
+        <img id="zombie" src="imagenes/zombie2.gif"onclick="ocultar('zombie');parar('sonido2')">
+        <img id="zombie2" src="imagenes/zombie5.gif"onclick="ocultar('zombie2');parar('sonido3')">
+    </div>
+</body>
+</html>
